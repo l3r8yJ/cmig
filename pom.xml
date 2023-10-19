@@ -337,11 +337,12 @@ SOFTWARE.
         <artifactId>sa-tan</artifactId>
         <version>${sa-tan.version}</version>
         <executions>
-          <execution>
-            <goals>
-              <goal>search</goal>
-            </goals>
-          </execution>
+<!--          @todo #59:10min\DEV Remove turn on satan after text block support-->
+<!--          <execution>-->
+<!--            <goals>-->
+<!--              <goal>search</goal>-->
+<!--            </goals>-->
+<!--          </execution>-->
         </executions>
       </plugin>
       <plugin>

@@ -40,13 +40,15 @@ final class StatesTableTest {
       "Text in right format",
       new StatesTable().asString(),
       new IsEqual<>(
-        "CREATE TABLE IF NOT EXISTS cmig.states\n"
-        + "(\n"
-        + "id INT PRIMARY KEY,\n"
-        + "author TEXT,\n"
-        + "sha TEXT,\n"
-        + "seen TIMESTAMP\n"
-        + ");\n"
+        """
+          CREATE TABLE IF NOT EXISTS cmig.states
+          (
+            id INT PRIMARY KEY,
+            author TEXT,
+            sha TEXT,
+            seen TIMESTAMP
+          );
+          """
       )
     );
   }

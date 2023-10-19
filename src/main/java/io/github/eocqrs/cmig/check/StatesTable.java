@@ -34,12 +34,14 @@ public final class StatesTable implements Text {
 
   @Override
   public String asString() throws Exception {
-    return "CREATE TABLE IF NOT EXISTS cmig.states\n"
-           + "(\n"
-           + "id INT PRIMARY KEY,\n"
-           + "author TEXT,\n"
-           + "sha TEXT,\n"
-           + "seen TIMESTAMP\n"
-           + ");\n";
+    return """
+      CREATE TABLE IF NOT EXISTS cmig.states
+      (
+        id INT PRIMARY KEY,
+        author TEXT,
+        sha TEXT,
+        seen TIMESTAMP
+      );
+      """;
   }
 }
