@@ -38,7 +38,7 @@ public final class InFile implements Cql {
    */
   private final Cassandra cassandra;
   /**
-   * File name.
+   * File name. Name of the file
    */
   private final String name;
 
